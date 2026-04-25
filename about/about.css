@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    position: relative;
+    z-index: 10;
+    background-color: rgb(245, 245, 245);
+}
+
+header .logo {
+    margin-right: auto;
+}
+
+header .nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+    position: relative;
+}
+
+header li, header a, header button {
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(30, 26, 26);
+    text-decoration: none;
+}
+
+header button {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+header button:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+}
+
+header .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    list-style: none;
+    border-radius: 5px;
+}
+
+header .dropdown-content li {
+    width: 150px;
+    padding: 10px 15px;
+    text-align: left;
+}
+
+header .dropdown-content a {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    text-decoration: none;
+}
+
+header .dropdown-content a:hover {
+    text-decoration: underline;
+}
+
+header .nav_links li:hover {
+    text-decoration: underline;
+}
+
+header .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* End navbar */
+
+.about-page {
+    padding: 20px;
+    padding-left: 15%;
+    padding-right: 15%;
+    background-color: rgb(245, 245, 245);
+}
+
+.section {
+    margin-bottom: 40px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.section h2 {
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.photo img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+}
+
+.text {
+    max-width: 600px;
+}
+
+.text a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.text a:hover {
+    text-decoration: underline;
+}
